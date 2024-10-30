@@ -1,0 +1,28 @@
+body {
+    font-size: 6em;
+    text-align: center;
+}
+.conut {
+    margin: 0;
+    font-weight: bold;
+    color: #888;
+}
+.wrap {
+    margin: 0;
+    padding: 80px 40px 80px 40px;
+    font-weight: bold;
+    background-color: #666;
+    color: #fff;
+}
+.typed {
+    color: lightgreen;
+}
+.mistyped {
+    background-color: red;
+}
+.typedConut {
+    display: none;
+    margin: 0;
+    font-weight: bold;
+    color: #888;
+}
