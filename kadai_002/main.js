@@ -74,18 +74,18 @@ const timer = () => {
         conutElm.textContent = time;
         //0以下になった場合
         if(time <= 0){
+            clearInterval(countdownInterval);
             typedElm.textContent = '';
             untypedElm.textContent = 'タイムアップ！';
             setTimeout(() => {
-                gameOver(countdownInterval);
+                gameOver();
             },10);
         }
     },1000);
 }
 
 //ゲームオーバー
-const gameOver = (id) => {
-    clearInterval(id);
+const gameOver = () => {
     let result = confirm(rankCheck(score));
     if(result){
         window.location.reload();
